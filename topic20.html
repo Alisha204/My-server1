@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Тақырып 20</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 Цикл ішінде шартты операторды қолдану </h1>
+
+<p>fЦикл ішінде шартты операторды қолдану дегеніміз – қайталану барысында белгілі бір шартты тексеріп, соған байланысты әртүрлі әрекеттер орындау. Яғни цикл қайталанып жатқан кезде оның ішінде if, else сияқты шартты операторлар қолданылады, бұл алгоритмді икемді және ақылды етеді.
+
+Цикл тек бірдей әрекетті қайталап қана қоймай, әр айналымда әртүрлі нәтиже беруі мүмкін. Бұл үшін циклдің ішінде шарт тексеріледі. Мысалы, 1-ден 10-ға дейінгі сандардың ішінен тек жұп сандарды шығару керек болса, цикл ішінде if шарты қолданылады.
+
+Мысалы:
+
+```id="loopif1"
+for(int i = 1; i <= 10; i++) {
+  if(i % 2 == 0) {
+    // жұп сан
+    System.out.println(i);
+  }
+}
+```
+
+Бұл жерде цикл 1-ден 10-ға дейін қайталанады, ал if операторы әр санды тексеріп, тек жұп сандарды ғана шығарады.
+
+Тағы бір мысал:
+
+```id="loopif2"
+int i = 1;
+while(i <= 5) {
+  if(i == 3) {
+    System.out.println("Үш саны табылды");
+  } else {
+    System.out.println(i);
+  }
+  i++;
+}
+```
+
+Мұнда цикл 5 рет орындалады, бірақ 3 болған кезде бөлек әрекет орындалады.
+
+Цикл ішінде шартты операторды қолданудың артықшылығы – бір цикл арқылы күрделі логиканы орындауға болады, яғни фильтрация, таңдау, тексеру сияқты әрекеттерді жүзеге асырады. Бұл тәсіл есептерді тиімді және қысқа түрде шешуге мүмкіндік береді.
+
+Қорытындылай келе, цикл ішінде шартты операторды қолдану – алгоритмді күшейтетін тәсіл, ол қайталану барысында деректерді тексеріп, әртүрлі нәтижелер алуға мүмкіндік береді.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>

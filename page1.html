@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>61 Тақырып</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search */
+.search-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card list */
+a {
+  display: block;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #2c3e50;
+  color: white;
+  transform: scale(1.02);
+}
+</style>
+</head>
+
+<body>
+
+<h1>📚 61 Тақырып</h1>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" id="search" placeholder="🔍 Іздеу...">
+</div>
+
+<div class="container" id="list"></div>
+
+<script>
+// 61 тақырыпты автомат жасау
+let list = document.getElementById("list");
+
+for(let i = 1; i <= 61; i++){
+  let a = document.createElement("a");
+  a.href = "topic" + i + ".html";
+  a.innerText = "Тақырып " + i;
+  list.appendChild(a);
+}
+
+// SEARCH функция
+document.getElementById("search").addEventListener("keyup", function(){
+  let value = this.value.toLowerCase();
+  let items = document.querySelectorAll("a");
+
+  items.forEach(function(item){
+    if(item.innerText.toLowerCase().includes(value)){
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
