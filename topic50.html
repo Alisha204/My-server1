@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 50 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	Матрицаның ең үлкен элементін табу бағдарламасын құру </h1>
+
+<p>**Матрицаның ең үлкен элементін табу бағдарламасы** — Data Structures курсында екі өлшемді массивтермен (матрицамен) жұмыс істеудің негізгі есептерінің бірі. Бұл есептің мақсаты — берілген матрицадағы барлық элементтерді қарап шығып, олардың ішіндегі ең үлкен мәнді анықтау.
+
+---
+
+## Алгоритмнің идеясы:
+
+Матрицаның әрбір жолы мен бағаны толық қаралады және әр элемент ағымдағы ең үлкен мәнмен салыстырылады. Егер жаңа элемент үлкен болса, ол ең үлкен мән ретінде сақталады.
+
+---
+
+## Алгоритм қадамдары:
+
+1. Матрица өлшемін енгізу (m × n)
+2. Матрицаны енгізу
+3. Ең үлкен элементті бірінші элементке теңестіру
+4. Барлық элементтерді қарап шығу (екі цикл арқылы)
+5. Әр элементті ең үлкен мәнмен салыстыру
+6. Үлкен болса — жаңарту
+7. Нәтижені шығару
+
+---
+
+## Python тіліндегі бағдарлама:
+
+```python id="matrix_max_1"
+# Матрица өлшемін енгізу
+m = int(input("Жол саны: "))
+n = int(input("Баған саны: "))
+
+# Матрицаны енгізу
+matrix = []
+for i in range(m):
+    row = []
+    for j in range(n):
+        x = int(input(f"a[{i}][{j}] = "))
+        row.append(x)
+    matrix.append(row)
+
+# Ең үлкен элементті табу
+max_value = matrix[0][0]
+
+for i in range(m):
+    for j in range(n):
+        if matrix[i][j] > max_value:
+            max_value = matrix[i][j]
+
+print("Матрицаның ең үлкен элементі:", max_value)
+```
+
+---
+
+## Түсіндірме:
+
+* `matrix[i][j]` — матрицаның i-жолы, j-бағаны
+* `max_value` — ең үлкен мәнді сақтайтын айнымалы
+* Екі цикл барлық элементті толық тексереді
+* Әр элемент салыстырылады және қажет болса жаңартылады
+
+---
+
+## Мысал:
+
+Матрица:
+
+```
+1  5  3
+9  2  7
+4  6  8
+```
+
+Нәтиже:
+
+```
+9
+```
+
+---
+
+## Қысқаша нұсқа (дайын функциямен):
+
+```python id="matrix_max_2"
+matrix = [
+    [1, 5, 3],
+    [9, 2, 7],
+    [4, 6, 8]
+]
+
+print(max(max(row) for row in matrix))
+```
+
+---
+
+## Қорытынды:
+
+Матрицаның ең үлкен элементін табу алгоритмі екі өлшемді массивтермен жұмыс істеуді үйретеді және циклдер, шартты операторлар және деректер құрылымдарын тиімді қолдану дағдысын дамытады.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>

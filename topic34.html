@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 34 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	switch–case операторы және оның артықшылықтары  </h1>
+
+<p>**switch–case операторы** — бұл бірнеше шартты тексеруге арналған таңдау операторы. Ол бір айнымалының мәнін әртүрлі мүмкін жағдайлармен салыстырып, сәйкес әрекетті орындайды.
+
+Негізгі жұмыс принципі: бір мән алынады (мысалы, `day` немесе `grade`), содан кейін `case` арқылы сол мән әртүрлі нұсқалармен салыстырылады. Егер сәйкес келсе, сол блок орындалады. Егер ешбір case сәйкес келмесе, `default` блогы орындалады.
+
+Жалпы құрылымы:
+
+Басы
+айнымалыны енгізу
+switch (айнымалы)
+ case 1: әрекет; break
+ case 2: әрекет; break
+ ...
+ default: әдепкі әрекет
+Соңы
+
+Мысалы JavaScript тілінде:
+
+```javascript id="sw1c92"
+let day = 3;
+
+switch(day){
+    case 1:
+        console.log("Дүйсенбі");
+        break;
+    case 2:
+        console.log("Сейсенбі");
+        break;
+    case 3:
+        console.log("Сәрсенбі");
+        break;
+    default:
+        console.log("Қате күн");
+}
+```
+
+Бұл жерде `day = 3` болғандықтан экранға **Сәрсенбі** шығады.
+
+---
+
+### 🔹 switch–case операторының артықшылықтары:
+
+**1. Оқылымдылығы жоғары**
+Көп `if–else` жазғаннан гөрі `switch` құрылымы түсінікті және таза көрінеді.
+
+**2. Бір айнымалымен жұмыс істейді**
+Бір ғана мәнді бірнеше нұсқамен салыстыруға ыңғайлы (күн, ай, мәзір, баға т.б.).
+
+**3. Құрылымы реттелген**
+Барлық мүмкін жағдайлар бір блокта көрсетіледі, кодты басқару жеңіл болады.
+
+**4. Орындау жылдамдығы (кей жағдайда)**
+Көп тармақты `if–else` тізбегіне қарағанда кей тілдерде `switch` тиімдірек жұмыс істеуі мүмкін.
+
+---
+
+### 🔹 Қорытынды:
+
+`switch–case` — бір айнымалының бірнеше мәнін тексеруге арналған тиімді оператор. Ол кодты ықшам, түсінікті және құрылымды етеді.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>

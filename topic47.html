@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 47 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	Берілген санның жұп немесе тақ екенін анықтайтын бағдарлама құру </h1>
+
+<p>Берілген санның жұп немесе тақ екенін анықтайтын бағдарлама — бағдарламалауда ең қарапайым шартты операторлар мен арифметикалық операцияларды қолдануға арналған классикалық есептердің бірі. Бұл есептің негізінде санның 2-ге бөлінгіштігін тексеру жатыр.
+
+Python тілінде толық бағдарлама:
+# Пайдаланушыдан сан енгізу
+n = int(input("Санды енгізіңіз: "))
+
+# Санның жұп немесе тақ екенін тексеру
+if n % 2 == 0:
+    print("Енгізілген сан жұп сан")
+else:
+    print("Енгізілген сан тақ сан")
+Бағдарламаның жұмыс істеу принципі:
+
+Бұл бағдарламада негізгі логика modulo (%) операциясына негізделген.
+n % 2 — санды 2-ге бөлгендегі қалдықты табады.
+
+Егер n % 2 == 0 болса → сан жұп
+Егер n % 2 != 0 болса → сан тақ
+Мысалдар:
+
+1-мысал:
+
+Санды енгізіңіз: 10
+Енгізілген сан жұп сан
+
+2-мысал:
+
+Санды енгізіңіз: 15
+Енгізілген сан тақ сан
+Қосымша нұсқа (тернарлық оператор арқылы):
+n = int(input("Санды енгізіңіз: "))
+print("Жұп сан" if n % 2 == 0 else "Тақ сан")
+Қорытынды:
+
+Бұл бағдарлама шартты тексеру (if-else) және арифметикалық операцияны қолдану арқылы жазылады. Ол алгоритмдік ойлауды дамытуға және бағдарламалаудың негізгі принциптерін түсінуге көмектеседі.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>

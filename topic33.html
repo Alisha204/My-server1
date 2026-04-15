@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 33 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	break және continue операторлары  </h1>
+
+<p>break және continue операторлары — циклдердің жұмысын басқаруға арналған арнайы операторлар. Олар циклдің орындалу тәртібін өзгерту үшін қолданылады.
+
+break операторы циклді толық тоқтату үшін қолданылады. Яғни, белгілі бір шарт орындалса, цикл бірден үзіліп, одан кейінгі қайталаулар орындалмайды. break көбіне іздеу есептерінде немесе қажетті мән табылған кезде пайдаланылады.
+
+Мысалы, массивтен белгілі бір санды тапқанда циклді тоқтату:
+
+let arr = [2, 5, 8, 10, 15];
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] == 10){
+        console.log("Табылды, индексі:", i);
+        break;
+    }
+}
+
+Бұл жерде 10 саны табылған кезде цикл тоқтайды.
+
+continue операторы циклдің сол ағымдағы қадамын өткізіп жіберу үшін қолданылады. Яғни, шарт орындалса, сол итерацияның қалған бөлігі орындалмайды, бірақ цикл әрі қарай жалғасады.
+
+Мысалы, тек жұп сандарды шығару:
+
+for(let i = 1; i <= 10; i++){
+    if(i % 2 !== 0){
+        continue;
+    }
+    console.log(i);
+}
+
+Бұл жерде тақ сандар кездессе, continue оларды өткізіп жібереді, ал жұп сандар ғана экранға шығады.
+
+Қорытынды:
+
+break → циклді толық тоқтатады
+continue → тек бір қадамды өткізіп, циклді жалғастырады
+
+Олар циклдерді тиімді басқаруға және артық есептеулерді азайтуға көмектеседі.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>
